@@ -1,0 +1,22 @@
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch -v
+	l = log --pretty=format:'%C(dim white)%h %C(dim yellow)%cd %C(bold blue)%an %Creset%s %C(red)%d %Creset' --abbrev-commit --date=format:'%d/%m/%y %H:%M'
+	lnc = log --pretty=format:'%h %cd - %s %d' --abbrev-commit --date=format:'%d/%m/%y %H:%M'
+	lc = config -l
+	refresh = fetch -p
+[user]
+	email = erwan.lbp@gmail.com
+	name = erwanlbp
+[push]
+	default = simple
+[color]
+    ui = true
+[color "status"]
+    untracked = yellow
+    branch    = bold white
+	added = green
+[color "branch"]
+    current  = bold cyan
